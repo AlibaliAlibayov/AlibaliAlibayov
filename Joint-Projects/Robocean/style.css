@@ -1,0 +1,218 @@
+:root{
+    --dark-blue-:#162938;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Ubuntu",sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.alert{
+    position: absolute;
+    top: -10%;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: scale(0.6);
+    transition: all .8s;
+}
+
+.alert.error{
+    animation-name: error;
+    animation-delay: .5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes error{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    75%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.alert.active{
+    top: 10px;
+    transform: scale(1);
+}
+
+.alert .alert-text{
+    font-size: 1.3em;
+    color: var(--dark-blue-);
+    font-weight: 700;
+    margin: auto 20px;
+}
+
+.alert .delete-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 70px;
+    height: 70px;
+    font-size: 2.2em;
+    border: none;
+    background: transparent;
+    color: var(--dark-blue-);
+    transition: color,border,background .6s;
+}
+
+.alert .delete-btn:hover{
+    color: white;
+    background: var(--dark-blue-);
+    border-left: 3px solid #fff;
+}
+
+.delete-btn:active{
+    font-size: 2.8em;
+}
+
+.wrapper{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 30px #00000050;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login-box{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box .title{
+    font-size: 3.4rem;
+    color: var(--dark-blue-);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 15px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid var(--dark-blue-);
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    font-weight: 600;
+    pointer-events: none;
+    color: var(--dark-blue-);
+    transition: all .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -3px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--dark-blue-);
+    padding-left: 2px;
+    padding-right: 50px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.5rem;
+    color: var(--dark-blue-);
+}
+
+.remember{
+    font-size: 1.1em;
+    margin: -15px 0 5px 5px;
+    color: var(--dark-blue-);
+}
+
+.remember label input{
+    accent-color: var(--dark-blue-);
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 30px 0 0 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--dark-blue-);
+    border: 2px solid var(--dark-blue-);
+    transition: all .4s;
+}
+
+.btn:hover{
+    color: #fff;
+    background: var(--dark-blue-);
+    transform: translate(-3px,-4px);
+}
+
+.btn:active{
+    transform: translate(3px,4px);
+}
+
+.logo{
+    width: 400px;
+    height: 100%;
+    object-fit: scale-down;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
+    <script src="https://kit.fontawesome.com/cfe474865a.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <title>Login Robocean</title>
+</head>
+<body>
+
+    <div class="alert">
+        <div class="alert-text">Password or Username is false.</div>
+        <button class="delete-btn"> <i class="fa-solid fa-x"> </i></button>
+    </div>
+
+    <div class="wrapper">
+        <div class="login-box">
+            <h1 class="title">Login</h1>
+            <form id="form" action="login.php" method="post">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input id="username" name="username" type="text" required>
+                    <label for="user">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input id="password" name="password" type="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember">
+                    <label>
+                        <input name="remembering" type="checkbox">
+                        Remember me
+                    </label>
+                </div>
+                <input value="Log in" class="btn" name="submit" type="submit"></input>
+            </form>
+        </div>
+        <div class="logo">
+            <img src="images/Robocean.png" alt="logo" class="logo">
+        </div>
+    </div>
+
+    <script>
+        const alertBox = document.querySelector(".alert"),
+        alertText = document.querySelector(".alert-text"),
+        deleteBtn = document.querySelector(".delete-btn"),
+        form = document.querySelector("#form");
+
+        let classList,response;
+
+        deleteBtn.addEventListener("click", () => {
+            classList = alert.classList.toString();
+            if(classList.indexOf("active") >= -1) alert.classList.remove("active");
+        });
+
+        form.addEventListener("submit", function(event) {
+        var form = event.target;
+        event.preventDefault(); 
+        var formData = new FormData(form);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log(xhr.responseText)
+                response = JSON.parse(xhr.responseText);
+                if(response['message'] === 'invalid login'){
+                    alertText.innerHTML = "Username or Password isn't correct.";
+                }
+                else if(response['message'] === 'empty inputs'){
+                    alertText.innerHTML = "Information didn't send completely!";
+                }
+                else if(response['message'] === 'didnot post all'){
+                    alertText.innerHTML = "Something went wrong!";
+                }
+                else if(response['message'] === 'method problem'){
+                    alertText.innerHTML = "Information didn't send post method!";
+                }
+                else if(response['message'] === 'login succesful'){
+                    location.replace("home/index.php")
+                }
+                if(response['alert'] === true){
+                    classList = alertBox.classList.toString();
+                    if(classList.indexOf("active") == -1){
+                        alertBox.classList.add("active");
+                    }
+                    else{
+                        if(classList.indexOf("error") == -1){
+                            alertBox.classList.add("error");
+                            setTimeout(() => {
+                                alertBox.classList.remove("error");
+                            }, 1500);
+                        }
+                    }
+                }
+            }
+        };
+        xhr.send(formData);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+ErrorDocument 400 /htdocs/error/400/index.html
+ErrorDocument 401 /htdocs/error/401/index.html
+ErrorDocument 402 /htdocs/error/402/index.html
+ErrorDocument 403 /htdocs/error/403/index.html
+ErrorDocument 404 /htdocs/error/404/index.html
+ErrorDocument 500 /htdocs/error/400/index.html
+ErrorDocument 502 /htdocs/error/402/index.html
+ErrorDocument 503 /htdocs/error/403/index.html
+ErrorDocument 504 /htdocs/error/404/index.html

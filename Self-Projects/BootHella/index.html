@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Hella </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/icon/icon.png" sizes="128x128" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+    .alt::after{
+        content: "";
+        display: block;
+        width: 20%;
+        height: 3px;
+        margin: 4px auto;
+        background-color: rgb(180, 169, 169);
+    }
+    .Myline::after{
+        content: "";
+        display: block;
+        width: 20%;
+        height: 3px;
+        margin: 4px;
+        background-color: sandybrown;
+    }
+    .SecondLine::after{
+        content: "";
+        display: block;
+        width: 80%;
+        height: 3px;
+        margin-top: 8px;
+        background-color: black;
+    }
+    .ThirdLine::after{
+        content: "";
+        display: block;
+        width: 45%;
+        height: 3px;
+        margin-top: 8px;
+        background-color: black;
+    }
+    .Four::after{
+        content: "";
+        display: block;
+        width: 25%;
+        height: 3px;
+        margin-top: 8px;
+        background-color: gray;
+    }
+    .hov{
+        color: rgb(179, 173, 173);
+    }
+    .hov:hover{
+        color: gray;
+        font-weight: bold;
+    }
+    .hov:hover:after{
+        content: "";
+        display: block;
+        width: 85%;
+        height: 3px;
+        background-color: rgb(180, 169, 169);
+    }
+    .hov:active{
+        color: gray;
+    }
+    .clck:hover{
+        transform: translate(5px,3px);
+    }
+    .clck:active{
+        transform: translate(3px,1px);
+    }
+    .inp:active{
+        border: 3px solid green;
+    }
+</style>
+</head>
+<body style="margin:0;">
+    
+    <header  class="container-fluid g-0">
+        <div class="card h-100">
+            <img  style="object-fit:cover; height: 100vh;" class="card-top-img" src="images/header.jpg" alt="">
+            <div  style="height: 100vh;" class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                <div style="font-size:85px; font-family:'Comic Sans MS';" class="card-title text-dark fw-bolder">Hella</div>
+                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-4">L I F E S T Y L E R S</div>
+                <div class="alt fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+        </div>
+    </header>
+ 
+    <section class="container-fluid bg-light p-3 d-flex justify-content-between mb-5">
+        <div style="height:5vh;" class="d-flex">
+            <a class="mx-2 fs-4 text-decoration-none hov" href="#">Home</a>
+            <a class="mx-2 fs-4 text-decoration-none hov" href="#">Featured</a>
+            <a class="mx-2 fs-4 text-decoration-none hov" href="#">Breakfast</a>
+            <a class="mx-2 fs-4 text-decoration-none hov" href="#">Fruits</a>
+            <a class="mx-2 fs-4 text-decoration-none hov" href="#">Contact</a>
+        </div>
+        <div class="d-flex row justify-content-center w-50">
+            <a href="#" class="col-1 d-block text-decoration-none fs-3 text-success bg-light fa fa-instagram"></a>
+            <a href="#" class="col-1 d-block text-decoration-none fs-3 text-success bg-light fa fa-youtube"></a>
+            <a href="#" class="col-1 d-block text-decoration-none fs-3 text-success bg-light fa fa-facebook"></a>
+            <a href="#" class="col-1 d-block text-decoration-none fs-3 text-success bg-light fa fa-twitter"></a>
+        </div>
+    </section>
+
+    <article class="container my-5 py-5 bg-light rounded-1">
+        <div class="row">
+            <div class="col d-flex justify-content-evenly">
+
+                <div class="card w-25 rounded-2">
+                    <img class="card-img rounded-2" style="object-fit:contain;" src="images/foods/1.jpg" alt="">  
+                    <div class="h-100 w-100 card-img-overlay d-flex align-items-end text-left  m-0 p-0">
+                        <div class="bg-dark w-75 h-50 opacity-50  rounded-2"></div>
+                        <div class="position-absolute left-0 bottom-0 text-white my-3 mx-3">
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6">B R E A K F A S T</div>
+                            <div style="font-family:'Impact';" class="fs-3 w-75">This could be a little for this blog</div>
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6 Myline">Read More</div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="card w-25 rounded-2">
+                    <img class="card-img rounded-2" style="object-fit:cover;" src="images/foods/burger.jpg" alt="">  
+                    <div class="h-100 w-100 card-img-overlay d-flex align-items-end text-left  m-0 p-0">
+                        <div class="bg-dark w-75 h-50 opacity-50  rounded-2"></div>
+                        <div class="position-absolute left-0 bottom-0 text-white my-3 mx-3">
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6">B R E A K F A S T</div>
+                            <div style="font-family:'Impact';" class="fs-3 w-75">This could be a little for this blog</div>
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6 Myline">Read More</div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="card w-25 rounded-2">
+                    <img class="card-img rounded-2 w-100 h-100" style="object-fit: cover;" src="images/foods/soup.jpg" alt="">  
+                    <div class="h-100 w-100 card-img-overlay d-flex align-items-end text-left  m-0 p-0">
+                        <div class="bg-dark w-75 h-50 opacity-50  rounded-2"></div>
+                        <div class="position-absolute left-0 bottom-0 text-white my-3 mx-3">
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6">B R E A K F A S T</div>
+                            <div style="font-family:'Impact';" class="fs-3 w-75">This could be a little for this blog</div>
+                            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6 Myline">Read More</div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <section class="container my-5 p-3 bg-light">
+        <div class="row">
+            <div class="col-6 px-3">
+                <div style="font-family:'Impact';" class="fs-3 w-75">What to ger weekly trips & tricks?</div>
+                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle fw-normal fs-6 Myline">Sign up and recive your first email immedently</div>
+            </div>
+            <div class="col-6 my-2 d-flex align-items-center justify-content-end">
+                <input placeholder=" Email" style="font-family:cursive; width: 30%; height: 60%; border: 3px solid green;" class=" d-block border-2 border-success me-3 rounded-1 inp" type="text">
+                <button style="font-family:cursive; width: 30%; height: 60%;" class="d-block border-0 bg-success text-white rounded-1 me-3 clck">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 bg-light p-5">
+        <div class="row">
+            <div class="col-8 pe-4">
+                <div class="row">
+                     <div class="col-6">
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/1.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/2.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/3.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/4.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/5.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0">
+                            <img style="object-fit:cover; height: 33.5vh;" class="card-img-top border-0 rounded-2" src="images/offer/6.jpg" alt="">
+                            <div class="card-body bg-light">
+                                <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Make a healthy routine for you</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla obcaecati esse, ducimus quo odio pariatur! Amet, blanditiis numquam.</div>
+                                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-left fs-6 text-secondary my-2 Myline">Read more</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- People-->
+            <div class="col-4">
+                <div class="card border-0 bg-light">
+                    <img style="object-fit:cover; height: 55vh;" class="d-block card-img-top border-0 rounded-2 bg-light" src="images/people/Woman Look.jpg" alt="">
+                    <div class="card-body d-flex justify-content-center flex-column border-0 bg-light">
+                        <div style="font-family:'Impact';" class="fs-3 card-title text-center mb-0">Sofia Vogue</div>
+                        <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-suptitle text-center fs-6 text-secondary my-2">FULL THE TIME BLOGGER</div>
+                        <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum aliquid nemo!</div>
+                    </div>
+                </div>
+
+                <div class="card border-0 my-5">
+                    <div class="card-content border-0 bg-light">
+                        <div class="card-header border-0 bg-light">
+                            <div style="font-family:'Impact';" class="fs-3 card-title text-left mb-0 SecondLine">My Personal Favorites</div>  
+                        </div>
+                        <div class="card-body border-0 bg-light">
+                            <div class="row my-2">
+                                <img class="col-4 card-img-left" src="images/offer/2.jpg" alt="">
+                                <div class="card-text col-8">
+                                    <div style="font-family:'Impact';" class="fs-4 card-title text-left mb-0">Lorem ipsum dolor sit.</div> 
+                                    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Read more</div> 
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <img class="col-4 card-img-left" src="images/offer/1.jpg" alt="">
+                                <div class="card-text col-8">
+                                    <div style="font-family:'Impact';" class="fs-4 card-title text-left mb-0">Lorem ipsum dolor sit.</div> 
+                                    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Read more</div> 
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <img class="col-4 card-img-left" src="images/offer/4.jpg" alt="">
+                                <div class="card-text col-8">
+                                    <div style="font-family:'Impact';" class="fs-4 card-title text-left mb-0">Lorem ipsum dolor sit.</div> 
+                                    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Read more</div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 my-5">
+                    <div class="card-content border-0 bg-light">
+                        <div class="card-header border-0 bg-light">
+                            <div style="font-family:'Impact';" class="fs-3 card-title text-left mb-0 ThirdLine">Interesting</div>  
+                        </div>
+                            <div class="card-body border-0 bg-light">
+                                <div class="card">
+                                    <img class="card-img-left" src="images/offer/2.jpg" alt="">
+                                    <div class="bg-dark h-100 w-100 card-img-overlay opacity-50"></div>
+                                    <div class="card-text card-img-overlay d-flex align-items-center justify-content-center flex-column">
+                                        <div style="font-family:'Impact';" class="fs-4 card-title text-center text-white mb-0">Vitamins C, now also aviable a simple package</div> 
+                                        <button style="font-family:cursive; width: 50%; height: 20%;" class="d-block border-0 bg-success text-white fw-bolder rounded-3 my-2 bg-gradient clck">SHOP NOW</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-success p-3 my-3">
+        <div class="row">
+            <div style="height:5vh;" class="col-8">
+                <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="mt-2 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quis aut.</p>
+            </div>
+            <div class="col-4">
+                <div class="row w-100 mt-2">
+                    <a href="#" class="me-5 col-1 text-decoration-none fs-3 text-light bg-success fa fa-instagram"></a>
+                    <a href="#" class="me-5 col-1 text-decoration-none fs-3 text-light bg-success fa fa-linkedin"></a>
+                    <a href="#" class="me-5 col-1 text-decoration-none fs-3 text-light bg-success fa fa-facebook"></a>
+                    <a href="#" class="me-5 col-1 text-decoration-none fs-3 text-light bg-success fa fa-twitter"></a>
+                    <a href="#" class="me-5 col-1 text-decoration-none fs-3 text-light bg-success fa fa-google"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container p-3 my-5 bg-light mb-0">
+        <div class="row">
+            <div class="col-3">
+                <div class="card border-0 bg-light">
+                    <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-header fw-semibold fs-5 text-secondary border-0 bg-light Four">
+                        FUNNYLY NAME
+                    </div>
+                    <div class="card-footer card-header fw-light text-secondary border-0 bg-light me-5">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sint, eius, illum deleniti repellat quibusdam asperiores facere doloremque fugiat aspernatur molestiae iure aut ratione recusandae.
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-header fw-semibold fs-5 text-secondary border-0 bg-light Four">
+                    PRODOCTS
+                </div>
+                <ul class="list-unstyled">
+                    <li class="my-3 mt-4"><a class="fw-semibold fs-6 text-decoration-none" href="#">MD@oofstrap</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">MDWord@1055</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">BrandFiaw</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">Dootstrap Angular</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-header fw-semibold fs-5 text-secondary border-0 bg-light Four">
+                    USEFUL LINKS
+                </div>
+                <ul class="list-unstyled">
+                    <li class="my-3 mt-4"><a class="fw-semibold fs-6 text-decoration-none" href="#">Your Account</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">Become and Afilities</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">Shopping Rates</a></li>
+                    <li class="my-3"><a class="fw-semibold fs-6 text-decoration-none" href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="card-header fw-semibold fs-5 text-secondary border-0 bg-light Four">
+                    CONTACT
+                </div>
+                <ul class="list-unstyled">
+                    <li class="my-3 mt-4"><i class="fa fa-home fs-4 me-2"></i><a class="fw-semibold fs-6 text-decoration-none" href="#">Zagatala,ZT 062,AZE</a></li>
+                    <li class="my-3"><i class="fa fa-envelope fs-4 me-2"></i><a class="fw-semibold fs-6 text-decoration-none" href="#">info@example.com</a></li>
+                    <li class="my-3"><i class="fa fa-phone fs-4 me-2"></i><a class="fw-semibold fs-6 text-decoration-none" href="#">+994 66 707 80 91</a></li>
+                    <li class="my-3"><i class="fa fa-credit-card-alt fs-4 me-2"></i><a class="fw-semibold fs-6 text-decoration-none" href="#">+994 85 763 88 21</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="d-flex justify-content-center">
+        <p class="d-block fw-light fs-5 me-1">© 2020 CopyRight </p>
+        <p class="fw-bold fs-5 d-block">MDBootstrap.com</p>
+    </footer>
+
+</body>
+</html>

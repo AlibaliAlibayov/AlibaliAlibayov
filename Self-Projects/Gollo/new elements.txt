@@ -1,0 +1,38 @@
+text-align:; (left,center,right,justify) div icindeki metnin gorunusu.
+
+text-tranform:; (uppercase,lowercase,capitalize) yazida herflerin boyuk kicik olub olmamasina qerar verir. uppercase = hamisi big . 
+lowcase = hamisi kicik. capitalize= her sozun bas herfini boyuk yazir.
+
+div {
+  width: 100px;
+  height: 100px;  
+  background: red;
+  transition: width 2s;
+  transition-property: width,height,border-radius;   /* neler animasiya olacaq */
+  transition-duration:1s;    /* ne qeder vaxta */
+  transition-delay: 1s;      /* ne qeder gozleyenden sonra */
+}
+div:hover {
+  width: 300px;
+  height:300px;
+  border-radius:50%;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: steps(10,start);   / baslayanda addim sayi/
+    linear /standar suret/ 
+    ease-in /yavas -> suretli/  
+    ease-out /suretli -> yavas/ 
+    ease-in-out /yavas -> suretli -> yavas/ 
+}
+  div:hover {
+    width: 600px;
+  }
+
+  crusor /mouse gorunumu/
+
+  outline / colden divar (border kimi amma box sizeing yemir/

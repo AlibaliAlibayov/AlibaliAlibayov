@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    background-image: url('../Back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.button {
+  margin: 5px 5px;
+  width: 55px;
+  height: 45px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 10px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 30px;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+.head{
+  width: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 8vh;
+}
+.con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coni{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#who{
+  margin-right: 8%;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 70px;
+  color: teal;
+  text-shadow: 3px 3px mediumseagreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name:Salla;
+  animation-duration: 0.7s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+@keyframes Salla{
+  from{
+    font-size: 70px;
+    transform: rotate(-2deg);
+  }
+  to{
+    font-size: 90px;
+    transform: rotate(2deg);
+  }
+}
+.main{
+  box-sizing: border-box;
+  height:89vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.first{
+  margin-left: 10px;
+  box-sizing: border-box;
+  width: 300px;
+  border: 3px solid black;
+  background-color: rgba(255, 168, 5, 0.552);
+  transform: rotate(-3deg);
+
+}
+.bash{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, cursive;
+}
+.rot1{
+  transform: rotate(-45deg);
+  margin-left: 13px;
+  
+}
+.rot2{
+  transform: rotate(45deg);
+  margin-right: 13px;
+}
+#chara{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  font-size: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+  z-index:1;
+  animation-name:Hop;
+  animation-duration: 1.4s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+#charb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  font-size: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  z-index:1;
+  animation-name:Hop;
+  animation-duration: 0.7s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-play-state: paused;
+}
+@keyframes Hop{
+  from{
+    font-size: 150px;
+  }
+  to{
+    font-size: 200px;
+  }
+}
+.second{
+  margin-right: 10px;
+  box-sizing: border-box;
+  width: 300px;
+  border: 3px solid black;
+  background-color: rgba(255, 168, 5, 0.552);
+  transform: rotate(3deg);
+}
+.table{
+  box-sizing: border-box;
+  height:630px;
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.a{
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  background-color: orange;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 170px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 5px 7px wheat;
+}
+.a:active{
+  box-shadow: 3px 5px wheat;
+  transform: translate(-2px,-2px);
+}

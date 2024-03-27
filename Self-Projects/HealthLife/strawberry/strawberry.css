@@ -1,0 +1,228 @@
+::-webkit-scrollbar {
+    background-color: transparent;
+  }
+::-webkit-scrollbar-track {
+    margin: -6px 0px;
+    width: 15px;
+    border-radius: 18px;
+    -webkit-box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.7);
+ }
+::-webkit-scrollbar-thumb {
+    width: 14px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 5px 20px rgb(105, 105, 105) inset;
+    border-radius: 11px;
+}
+#header{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+#section{
+    background: url("../photos/ABack.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 675px;
+    left: 0;
+    border-top: 5px solid rgb(137, 176, 176);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    width: 85%;
+    margin: 6.5% 0%;
+    margin-bottom: 3%;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 27px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: rgb(72, 64, 64);
+    font-family: 'Comic Sans MS';
+}
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#button{
+    text-decoration: none;
+    margin: 34%;
+    font-size: 60px;
+    color: rgb(58, 51, 103);
+    background-color: antiquewhite;
+    padding: 0 5px;
+}
+#button:active{
+    transform: translate(2px,3px);
+}
+#nav{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    align-self: flex-start;
+    z-index: 10;
+    font-size: 50px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 6.5%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav:active{
+    transform: translate(3px,4px);
+}
+#addcomment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    z-index: -5;
+    bottom: 2%;
+    right: 6.5%;
+    width: 75%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border: 5px solid rgb(0, 162, 255);
+}
+#addcomment-container{
+    margin: 5px 0px;
+    padding: 0px 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.Can{
+    width: 14%;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(78, 49, 91);
+    color: rgb(255, 106, 0);
+    margin: 5px 5px;
+    font-family:  'Comic Sans MS', cursive;
+    border: 4px solid rgb(46, 46, 88);
+    font-weight: 600;
+    font-size: 22px;
+}
+.Sub{
+    width: 14%;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(255, 132, 0);
+    color: rgb(65, 60, 110);
+    margin: 5px 5px;
+    margin-right: 10%;
+    font-family: 'Comic Sans MS', cursive;
+    border: 4px solid rgb(46, 46, 88);
+    font-weight: 600;
+    font-size: 22px;
+}
+.Can:active, .Sub:active{
+    transform: translate(3px,5px);
+}
+.com{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#comment{
+    width: 80%;
+    height: 38px;
+    margin: 5px 10px;
+    border: 0;
+    outline: 0;
+    border: 5px solid salmon;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Comic Sans MS',serif;
+    color: rgb(62, 61, 60);
+}
+#comments{
+    width: 85%;
+    margin: 6.5% 0%;
+    margin-bottom: 3%;
+    margin-top: 0;
+    background-color: rgb(114, 91, 135);
+    box-sizing: border-box;
+    padding: 27px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: rgb(72, 64, 64);
+    font-family: 'Comic Sans MS';
+    /*System*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#comments-exp{
+    width: 85%;
+    margin: 2% 0%;
+    background-color: rgb(114, 91, 135);
+    padding: 18px;
+    box-sizing: border-box;
+    padding-right: 25px;
+    border-radius: 30px;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(228, 212, 212);
+    font-family: 'Comic Sans MS';
+}
+#question{
+    background-color: beige;
+    border-radius: 25px;
+    font-size: 25px;
+    width: 85%;
+    margin: 5px 0px 5px 0px;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 30px;
+}
+#answer{
+    background-color: rgb(192, 142, 241);
+    border-radius: 25px;
+    font-size: 25px;
+    width: 70%;
+    margin: 5px 0px 5px 0px;
+    margin-right: 7%;
+    box-sizing: border-box;
+    padding: 8px 8px 8px 30px;
+    align-self: end;
+}
+#comments button{
+    align-self: start;
+    background-color: rgb(21, 19, 27);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-left: 7.5%;
+    border: 0;
+    box-sizing: border-box;
+    padding: 3px 7px;
+    color: rgb(0, 175, 244);
+    margin-bottom: 10px;
+}
+#comments button:active{
+    transform: translate(2px,3px);
+}
